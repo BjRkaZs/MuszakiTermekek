@@ -14,6 +14,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { NavComponent } from './nav/nav.component';
 
 import { environment } from '../environments/environment';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { environment } from '../environments/environment';
     NgbModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    TranslateModule.forRoot()
   ],
   providers: [
     provideHttpClient()
