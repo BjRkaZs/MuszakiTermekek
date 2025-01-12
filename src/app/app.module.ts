@@ -13,6 +13,8 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { NavComponent } from './nav/nav.component';
 
+import { environment } from '../environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +27,7 @@ import { NavComponent } from './nav/nav.component';
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    //AngularFireModule.initializeApp(environments.firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule
   ],
   providers: [
