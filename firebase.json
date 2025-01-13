@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "dist/muszaki-web-shop/browser",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
